@@ -1,1 +1,125 @@
+.nav-item{
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.nav-link:hover{
+    color: #1559B7;
+}
+
+.carousel-item{
+    background: #EDEDED;
+    height: 537px;
+}
+
+/* Classe filha  */
+.carousel_item.bg-black{ 
+    background-color: black;
+    color: white;
+    
+}
+
+/* A image e o captions acabam por ocupar o mesmo espaço. Sabendo que esse espaço tem uma width de 100% para tornar
+o caption e a imagem responsivas usámos as percentagems nestas duas classes. Assim ao aumentar ou diminuir a janela ambos se adaptam */
+.frame{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    float: right;
+    display: flex;
+    justify-content: center; /* Centrar a imagem horizontalmente */
+    align-items: center; /* Centrar a imagem verticalmente */
+}
+
+.carousel-image{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    padding: 5%;
+}
+
+.caption{
+    position: relative;
+    width:60%;
+    height: 100%;
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+    padding-left: 5%;
+}
+
+ .caption h1{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    text-shadow: #000 2px 0 2px;
+}
+
+.caption.white{
+    color: white;
+}
+
+/* Override a opacity da classe do bootsrap pois fazia que o SVG ficasse com opacidade */
+.carousel-control-prev{
+    opacity: 100%;
+    width: 5%;
+}
+
+.carousel-control-next{
+    opacity: 100%;
+    width: 5%;
+}
+
+/* Importação do SVG e override da opacity */
+.carousel-control-prev-icon {
+    background-image: url('../resources/img/prev.svg'); 
+    opacity: 100%;
+}
+.carousel-control-next-icon {
+    background-image: url('../resources/img/next.svg'); 
+    opacity: 100%; 
+}
+
+/* Hover do SVG */
+.carousel-control-prev-icon:hover{
+    background-image: url('../resources/img/prev-blue.svg'); 
+}
+
+.carousel-control-next-icon:hover{
+    background-image: url('../resources/img/next-blue.svg');
+}
+
+.btn {
+    border-radius: 0%;   
+}
+.btn:hover{
+    background-color: #1559B7; 
+    border-color: #1559B7; 
+}
+
+.btn.fixed-width {
+    width: 100px;
+}
+
+.btn.white{
+    color: white;
+    border-color: white;
+    
+}
+
+.btn.white:hover{
+    color: black;
+    background: white;
+    
+}
+
+.carousel-indicators button {
+    width: 50px !important; /* Largura padrão dos botões */
+}
+
+.carousel-indicators .active {
+    background-color: #1559B7; /* Cor do botão ativo */
+}
+
 

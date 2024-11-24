@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Homepage</title>
 </head>
+
 <body>
-    
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-expand-sm">
+        <a href="" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+          <img src="resources/img/logo.png" alt="Logotipo IPL" id="logotipo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Países</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loja</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-primary">Contactos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div id="carouselExampleCaptions" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2" class="no-active"></button>
+    </div>
+    <div class="carousel-inner" class="col-1">
+      <div class="carousel-item active">
+        <div class="frame">
+          <img src="resources/img/japao.png" class="carousel-image" alt="...">
+        </div>
+        <div class="caption">
+          <h1>Descobre o Japão</h1>
+          <p>Faz uma viagem pelos destinos mais deslumbrantes do mundo. Das ruas vibrantes de Nova Iorque às antigas
+            ruínas de Roma, cada imagem revela um lugar à espera de ser explorado.</p>
+          <p>Quer seja para aventura, relaxamento ou descoberta, encontra o teu próximo destino connosco.</p>
+          <a class="btn fixed-width btn-outline-primary" >Explorar</a>
+        </div>
+      </div>
+      <div class="carousel-item bg-black">
+        <div class="frame">
+        <img src="resources/img/australia.png" class="carousel-image" alt="...">
+        </div>
+        <div class="caption white">
+          <h1>Descobre a Austrália</h1>
+          <p>Descobre a vibrante Grande Barreira de Coral, a famosa Ópera de Sydney e o vasto Outback.</p>
+          <p>A Austrália oferece uma vida selvagem única, costas ensolaradas e paisagens diversificadas.</p>
+          <a class="btn fixed-width white btn-outline-primary ">Explorar</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
