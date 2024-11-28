@@ -1,1 +1,83 @@
+  /* tirar border dos cards */
+  .card{
+    border-radius:0px !important;
+    
+  }
+/* tirar a text decoration */
+  .country-card a {
+    text-decoration: none; 
+    color: black; 
+  }
+
+  .section-title {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px 0 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+    width: 49%; 
+    margin: 0 auto; 
+    padding-bottom: 30px;
+  }
+
+  .country-card img {
+    border-radius: 0;
+    padding: 10px;
+    height: auto;
+  }
+  
+  .country-card .card-body {
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* explore section  */
+  .explore-section {
+    margin: 40px 0px;
+    background-image: 
+    url('../resources/img/Rectangle10.png'),
+    url('../resources/img/paisagem.png');
+    background-size: cover, cover;
+    text-align: center;
+    align-items: center;
+    padding: 170px 100px;
+  }
+
+  /* texto e titulo */
+  .explore-section h2 {
+    color: white;
+    font-size: 70px;
+    margin-bottom: 40px;
+  }
+
+  .explore-section p {
+    color: white;
+    font-size: 20px;
+    max-width: 70%;
+    margin: 0 auto 20px;
+  }
+  /* botao explore section */
+  .explore-section .btn {
+    color: black;
+    background-color: white;
+    border-radius: 0%;
+    border-color: white;
+    padding: 10px;
+    width: 150px;
+  }
+/* poe o botao com background transparent e blurry */
+  .explore-section .btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px); 
+    color: white;
+  }
+
+
+
+
+
+
 
