@@ -33,6 +33,12 @@
     padding: 10px;
     text-align: center;
   }
+  .country-card {
+    width: 90%;
+  }
+  .col-md-3 {
+    padding: 0;
+  }
 
   /* explore section  */
   .explore-section {
@@ -42,8 +48,7 @@
     url('../resources/img/paisagem.png');
     background-size: cover, cover;
     text-align: center;
-    align-items: center;
-    padding: 170px 100px;
+    padding: 90px 0px;
   }
 
   /* texto e titulo */
@@ -56,8 +61,8 @@
   .explore-section p {
     color: white;
     font-size: 20px;
-    max-width: 70%;
-    margin: 0 auto 20px;
+    max-width: 77%;
+    margin: 20px auto;
   }
   /* botao explore section */
   .explore-section .btn {
