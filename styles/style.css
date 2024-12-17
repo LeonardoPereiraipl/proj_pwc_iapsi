@@ -1,1 +1,297 @@
+  html,body{
+    width: 100%;
+    overflow-x: hidden; 
+  }
+  /* tirar border dos cards */
+  .card{
+    border-radius:0px !important;
+  }
+/* tirar a text decoration */
+  .country-card a {
+    font-family: sans-serif;
+    text-decoration: none; 
+    color: black; 
+  }
 
+  .section-title {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px 0 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+    width: 49%; 
+    margin: 0 auto; 
+    padding-bottom: 30px;
+  }
+
+  .country-card img {
+    border-radius: 0;
+    padding: 10px;
+    height: auto;
+  }
+  
+  .country-card .card-body {
+    padding: 10px;
+    text-align: center;
+  }
+  .country-card {
+    width: 90%;
+  }
+  .col-md-3 {
+    padding: 0;
+  }
+
+  /* explore section  */
+  .explore-section {
+    margin: 40px 0px;
+    background-image: 
+    url('../resources/img/Rectangle10.png'),
+    url('../resources/img/paisagem.png');
+    background-size: cover, cover;
+    text-align: center;
+    padding: 90px 0px;
+  }
+
+  /* texto e titulo */
+  .explore-section h2 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 70px;
+    margin-bottom: 40px;
+  }
+
+  .explore-section p {
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    max-width: 78%;
+    margin: 20px auto;
+  }
+
+.nav-item{
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.nav-link:hover{
+    color: #1559B7;
+}
+
+.carousel-item{
+    background: #EDEDED;
+    height: 537px;
+}
+
+/* Classe filha  */
+.carousel_item.bg-black{ 
+    background-color: black;
+    color: white;
+    
+}
+
+/* A image e o captions acabam por ocupar o mesmo espaço. Sabendo que esse espaço tem uma width de 100% para tornar
+o caption e a imagem responsivas usámos as percentagems nestas duas classes. Assim ao aumentar ou diminuir a janela ambos se adaptam */
+.frame{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    float: right;
+    display: flex;
+    justify-content: center; /* Centrar a imagem horizontalmente */
+    align-items: center; /* Centrar a imagem verticalmente */
+}
+
+.carousel-image{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    padding: 5%;
+}
+
+.caption{
+    position: relative;
+    width:60%;
+    height: 100%;
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+    padding-left: 5%;
+}
+
+ .caption h1{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    text-shadow: #000 2px 0 2px;
+}
+
+.caption.white{
+    color: white;
+}
+
+/* Override a opacity da classe do bootsrap pois fazia que o SVG ficasse com opacidade */
+.carousel-control-prev{
+    opacity: 100%;
+    width: 5%;
+}
+
+.carousel-control-next{
+    opacity: 100%;
+    width: 5%;
+}
+
+/* Importação do SVG e override da opacity */
+.carousel-control-prev-icon {
+    background-image: url('../resources/img/prev.svg'); 
+    opacity: 100%;
+}
+.carousel-control-next-icon {
+    background-image: url('../resources/img/next.svg'); 
+    opacity: 100%; 
+}
+
+/* Hover do SVG */
+.carousel-control-prev-icon:hover{
+    background-image: url('../resources/img/prev-blue.svg'); 
+}
+
+.carousel-control-next-icon:hover{
+    background-image: url('../resources/img/next-blue.svg');
+}
+
+.btn {
+    border-radius: 0%;   
+}
+.btn:hover{
+    background-color: #1559B7; 
+    border-color: #1559B7; 
+}
+
+.btn.fixed-width {
+    width: 100px;
+}
+
+.btn.white{
+    color: white;
+    border-color: white;
+    
+}
+
+.btn.white:hover{
+    color: black;
+    background: white;
+    
+}
+
+  /* botao explore section */
+.explore-section .btn {
+    color: black;
+    background-color: white;
+    border-radius: 0%;
+    border-color: white;
+    padding: 10px;
+    width: 150px;
+  }
+/* poe o botao com background transparent e blurry */
+.explore-section .btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px); 
+    color: white;
+  }
+
+.carousel-indicators button {
+    width: 50px !important; /* Largura padrão dos botões */
+}
+
+.carousel-indicators .active {
+    background-color: #1559B7; /* Cor do botão ativo */
+}
+
+.sobre-section {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sobre-section h1 {
+  font-family: Arial, sans-serif;
+  font-size: 2 rem;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.row {
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.card-title {
+  font-weight: bolder !important;
+}
+
+.sobre-section .card{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  width: 200px;
+}
+
+.sobre-section .card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 0px;
+  padding-top: 0%;
+}
+
+.redes {
+  text-align: center;
+}
+
+.redes a img {
+  margin: 0 5px;
+}
+
+.footer-container {
+  background-color: #D9D9D9;
+  width: 100%;
+}
+
+.footer {
+  justify-content: center;
+  text-align: center;
+  margin: 0 5px;
+  padding: 0px;
+
+}
+
+.nav-item {
+  padding: 8px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logotipo {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.btn-outline-primary {
+  border-radius: 0px !important;
+  font-weight: bolder;
+}
+
+.card-body {
+  padding: 0px;
+}

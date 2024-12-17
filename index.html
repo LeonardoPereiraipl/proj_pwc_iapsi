@@ -1,11 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <title>Homepage</title>
+
 </head>
+
 <body>
-    
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-expand-sm">
+        <a href="" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+          <img src="resources/img/logo.png" alt="Logotipo IPL" id="logotipo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Países</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loja</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-primary">Contactos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div id="carouselExampleCaptions" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2" class="no-active"></button>
+    </div>
+    <div class="carousel-inner" class="col-1">
+      <div class="carousel-item active">
+        <div class="frame">
+          <img src="resources/img/japao.png" class="carousel-image" alt="...">
+        </div>
+        <div class="caption">
+          <h1>Descobre o Japão</h1>
+          <p>Faz uma viagem pelos destinos mais deslumbrantes do mundo. Das ruas vibrantes de Nova Iorque às antigas
+            ruínas de Roma, cada imagem revela um lugar à espera de ser explorado.</p>
+          <p>Quer seja para aventura, relaxamento ou descoberta, encontra o teu próximo destino connosco.</p>
+          <a class="btn fixed-width btn-outline-primary" >Explorar</a>
+        </div>
+      </div>
+      <div class="carousel-item bg-black">
+        <div class="frame">
+        <img src="resources/img/australia.png" class="carousel-image" alt="...">
+        </div>
+        <div class="caption white">
+          <h1>Descobre a Austrália</h1>
+          <p>Descobre a vibrante Grande Barreira de Coral, a famosa Ópera de Sydney e o vasto Outback.</p>
+          <p>A Austrália oferece uma vida selvagem única, costas ensolaradas e paisagens diversificadas.</p>
+          <a class="btn fixed-width white btn-outline-primary ">Explorar</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Escolha o País Section -->
+  <div class="container">
+    <h2 class="section-title">Escolha o País</h2>
+    <p class="text-center">Escolha um dos países para explorar as oportunidades e destinos. Descubra os lugares mais fascinantes do mundo, cada um deles com características específicas e inspiradoras.</p>
+    <div class="row justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-3">
+        <div class="card country-card">
+          <a href="usa.html">
+          <img src="resources/img/USimage.png" class="card-img-top" alt="EUA">
+          <div class="card-body ">
+            <h5 class="card-title">Estados Unidos da América</h5>
+          </div>
+        </a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-3">
+        <div class="card country-card">
+          <a href="canada.html">
+          <img src="resources/img/canada.png" class="card-img-top" alt="Canadá">
+          <div class="card-body">
+            <h5 class="card-title">Canadá</h5>
+          </div>
+        </a>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-3">
+        <div class="card country-card">
+          <a href="uk.html">
+          <img src="resources/img/unitedKingdom.png" class="card-img-top" alt="Reino Unido">
+          <div class="card-body">
+            <h5 class="card-title">Reino Unido</h5>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Explore o Mundo -->
+  <div class="explore-section">
+    <h2>Explora O Mundo Connosco</h2>
+    <p>Embarca numa aventura para descobrir os destinos mais cativantes do mundo, desde paisagens urbanas vibrantes até serenas maravilhas naturais. Explora o encanto único de cada país, rico em cultura, história e experiências inesquecíveis. Deixa-nos ser o teu guia até lugares que inspiram e despertam o espírito de exploração. Em cada viagem, descobre novas perspetivas e tesouros escondidos à espera de serem revelados. Começa a tua aventura hoje e cria memórias que durarão para toda a vida.</p>
+    <a href="#" class="btn btn-outline-primary">Explorar</a>
+  </div>
+<!-- footer -->
+  <section class="sobre-section">
+    <div class="row">
+      <h1 style="font-weight: bold;">Sobre Nós</h1>
+      <div class="card" style="width: 18rem;">
+        <img src="resources/img/polaris.jpg" class="card-img-top" alt="estudante">
+        <div class="card-body">
+          <h5 class="card-title">Leticia Haussman</h5>
+          <p class="card-text">Estudante</p>
+          <a href="#" class="btn btn-outline-primary">Mais informações ></a>
+        </div>  
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="resources/img/leo123.png" class="card-img-top" alt="estudante"">
+        <div class="card-body ">
+          <h5 class="card-title">Leonardo Pereira</h5>
+          <p class="card-text">Estudante</p>
+          <a href="#" class="btn btn-outline-primary">Mais informações ></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="resources/img/saisha.jpg" class="card-img-top" alt="estudante">
+        <div class="card-body">
+          <h5 class="card-title">Saisha Ruiz</h5>
+          <p class="card-text">Estudante</p>
+          <a href="#" class="btn btn-outline-primary">Mais informações ></a>
+        </div>
+      </div>
+    </div>
+  <footer class="footer-container">
+    <div class="container">
+        <div class="logotipo">
+        <img src="resources/img/logotipo_ipl.png">
+        </div>
+        <div class="footer">
+           <ul class="nav justify-content-center pb-3 mb-3">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Países</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Loja</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sobre</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contactos</a></li>
+          </ul>   
+        </div>
+      <div class="redes">
+        <a href="#"><img src="resources/img/linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img src="resources/img/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="resources/img/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="resources/img/twitter.png" alt="Twitter"></a>
+      </div>
+      <hr>
+        <p class="text-center text-body-secondary"> &copy; 2024 Direitos de Autor, Todos os direitos reservados</p>
+    </div>
+  </footer>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+ 
