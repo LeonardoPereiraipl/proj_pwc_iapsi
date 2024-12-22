@@ -295,3 +295,16 @@ o caption e a imagem responsivas usámos as percentagems nestas duas classes. As
 .card-body {
   padding: 0px;
 }
+
+.favorite{
+  font-size: 30px;
+  position: relative;
+}
+.favorite.active{
+  color: gold;
+}
+
+.box-search{
+  width: 300px;
+  margin-left: 10px;
+}
