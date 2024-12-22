@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Favoritos</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-sm">
+                <a href="" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                    <img src="resources/img/logo.png" alt="Logotipo IPL" id="logotipo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paises.html">Países</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Loja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Favoritos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+    </div>
+    </header>
+
+    <h3 class="section-title"> Lista de Favoritos </h3>
+    <div class="d-flex box-search" role="search">
+        <input class="form-control me-2" id="pesquisa" type="search" placeholder="Nome do país" aria-label="Pesquisar">
+        <button class="btn btn-outline-primary" id="btn-search" type="submit">Pesquisar</button>
+    </div>
+    <container class="col-md-3">
+        <div class="row justify-content-center" id="cartao-container">
+            <!-- esqueleto de codigo para quando gerar os cards -->
+            <div id="cartao" class="col-md-3">
+              <div class="card country-card">
+                <img class="card-img-top">
+                <h5 class="card-title"></h5>
+                <div class="card-body ">
+                  <p class="card-capital"></p>
+                  <p class="card-population"></p>
+                  <span class="favorite">&#9734;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </container>
+
+    <footer class="footer-container">
+        <div class="container">
+            <div class="logotipo">
+                <img src="resources/img/logotipo_ipl.png">
+            </div>
+            <div class="footer">
+                <ul class="nav justify-content-center pb-3 mb-3">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Países</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Loja</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sobre</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contactos</a></li>
+                </ul>
+            </div>
+            <div class="redes">
+                <a href="#"><img src="resources/img/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="resources/img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="resources/img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="resources/img/twitter.png" alt="Twitter"></a>
+            </div>
+            <hr>
+            <p class="text-center text-body-secondary"> &copy; 2024 Direitos de Autor, Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/favoritos.js"></script>
+</body>
+
+</html>
