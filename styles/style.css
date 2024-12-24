@@ -299,6 +299,7 @@ o caption e a imagem responsivas usámos as percentagems nestas duas classes. As
 .favorite{
   font-size: 30px;
   position: relative;
+  cursor: pointer;
 }
 .favorite.active{
   color: gold;
