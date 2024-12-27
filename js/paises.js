@@ -27,15 +27,17 @@ function carregarPaises(url){
                 $('.card-img-top', copiarCartao).attr('src',bandeira); //attr é o atributo que estou a asceder no scr
                 $('.card-title', copiarCartao).text(nome);
                 $('.card-capital', copiarCartao).text("Capital: "+capital);
+                $('.card-link', copiarCartao).attr('href', `detalhes_paises.html?name=${encodeURIComponent(nome)}`);
                 $('.card-population', copiarCartao).text("População: "+populacao);
                 $('#cartao-container').append(copiarCartao);//envio o codigo do card gerado para o container
-
+                    
+                        
                       //guardar os dados do país em um dicionario para enviar ao localStorage
-                      const dadosPais = {
-                        bandeira: bandeira,
-                        nome: nome,
-                        populacao: populacao,
-                        capital: capital
+                    const dadosPais = {
+                     bandeira: bandeira,
+                     nome: nome,
+                     populacao: populacao,
+                     capital: capital
     
                     };
                     const botaoFavorito = $('.favorite', copiarCartao);
@@ -69,6 +71,7 @@ function carregarPaises(url){
                         }
                         localStorage.setItem('favoritos', JSON.stringify(favoritos));
                     });
+                    
             }
         },
         error: function(){

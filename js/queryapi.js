@@ -22,6 +22,7 @@ $(document).ready(function(){
                 var copiarCartao=copiarCartaoOriginal.clone();//estou a guardar o codigo que tem na variavel copiarCartaoOriginal 3 vezes
                 $('.card-img-top', copiarCartao).attr('src',bandeira); //attr é o atributo que estou a asceder no scr
                 $('.card-title', copiarCartao).text(nome);
+                $('.card-link', copiarCartao).attr('href', `detalhes_paises.html?name=${encodeURIComponent(nome)}`);
                 $('#cartao-container').append(copiarCartao);
             }
         },
