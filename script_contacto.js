@@ -1,53 +1,70 @@
-document.getElementById('contact-form').addEventListener('submit', function(event){
-    event.preventDefault();
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault(); 
     validateForm();
-
 });
 
-var nome= document.getElementById('nome');
-    if(nome.value.length <2) {
-        mensagemErro= "Por favor, insira o seu nome (minimo 2 caracteres)";
-
-    }
-
 function validateForm() {
-        var mensagemErro= false;
-    
-        var nome=document.getElementById('nome');
-        console.log("nome");
-    
-        if (nome.value.length <2) {
-            mensagemErro= "Por favor , insira seu nome (minimio 2 caracteres!)"
-            showError('nome', mensagemErro)
-        }
-    
-        var mensagem= document.getElementById('mensagem');
-    
-        if (mensagem.value.length <5) {
-            mensagemErro= "Por favor, insira uma mensagem";
-        }
-    
-        var termos= document.getElementById("termos");
-    
-        if(termos.checked) {
-            mensagemErro="Tem de aceitar os termos e condições";
-        }
-    
-        var email= document.getElementById('email');
-        if (!validateEmail (email.value)) {
-            mensagemErro= "Por favor, insira um email válido";
-        }
+    var erro = false; 
 
-        var termos= document.getElementById("termos");
+    // Validação do nome
+    var nome = document.getElementById('nome');
+    if (nome.value.length < 2) {
+        showError('nome', 'Por favor, insira o seu nome (mínimo 2 caracteres)');
+        erro = true;
+    } 
 
-        if(termos.checked) {
-            mensagemErro="Tem de aceitar os termos e condições";
-        }
-    
+    // Validação do email
+    var email = document.getElementById('email');
+    if (!validateEmail(email.value)) {
+        showError('email', 'Por favor, insira um email válido');
+        erro = true;
+    } 
+
+    // Validação da mensagem
+    var mensagem = document.getElementById('mensagem');
+    if (mensagem.value.length < 5) {
+        showError('mensagem', 'Por favor, insira uma mensagem com pelo menos 5 caracteres');
+        erro = true;
+    } 
+
+    // Validação dos termos
+    var termos = document.getElementById('termos');
+    if (!termos.checked) {
+        showError('termos', 'Tem de aceitar os termos e condições');
+        erro = true;
+    } 
+    if (!erro) {
+        alert('Formulário enviado com sucesso!');
+        document.getElementById('contact-form').reset(); // Limpa o formulário
+        clearAllErrors(); // Remove as mensagens de erro e classes de validação
     }
+}
 
-function validateEmail(email){
-        var regex= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        regex.test(email);
-        return regex.test(email);
+// Função para validar email
+function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
+// Função para exibir mensagem de erro
+function showError(campoId, mensagem) {
+    const field = document.getElementById(campoId);
+    let errorElement = document.querySelector(`#${campoId} ~ .error-mensagem`);
+    if (!errorElement) {
+        errorElement = document.createElement('div');
+        errorElement.classList.add('error-mensagem');
+        errorElement.style.color = 'red';
+        field.parentNode.appendChild(errorElement);
+    }
+    errorElement.textContent = mensagem;
+    field.classList.add('is-invalid');
+}
+
+// Função para limpar todas as mensagens de erro
+function limparErros() {
+    const erroMenssagem = document.querySelectorAll('.erro-menssagem');
+    erroMenssagem.forEach(error => error.remove());
+
+    const invalidFields = document.querySelectorAll('.is-invalid');
+    invalidFields.forEach(field => field.classList.remove('is-invalid'));
 }

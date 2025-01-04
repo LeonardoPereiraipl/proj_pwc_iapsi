@@ -31,7 +31,7 @@
               <a class="nav-link" href="#">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-outline-primary">Contactos</a>
+              <a class="btn btn-outline-primary" href="contacto.html">Contactos</a>
             </li>
           </ul>
         </div>
@@ -57,22 +57,21 @@
                 <a href="#"><img src="resources/img/instagram.png" alt="Instagram"></a>
             </div>
         </div>
-        <form>
+        <form id="contact-form" method="post" novalidate>
             <div class="input-box">
-                <input type="nome" placeholder="Nome Completo" required>
+                <input type="nome" id="nome" placeholder="Nome Completo" required>
             </div>
             <div class="input-box">
-                <input type="email" required placeholder="E-mail">
+                <input type="email" id="email" required placeholder="E-mail">
             </div>
             <div class="input-box">
-                <textarea placeholder="Mensagem..."></textarea>
+                <textarea  id="mensagem" placeholder="Mensagem..."required></textarea>
             </div>
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="termos" required>
               <label class="form-check-label" for="termos">Termos e condições</label>
           </div>
             <button type="submit">Submeter</button>
-
         </form>
     </div>
   </div>
@@ -106,7 +105,7 @@
 
 
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="script_contacto.js"></script>
 </body>
 </html>
