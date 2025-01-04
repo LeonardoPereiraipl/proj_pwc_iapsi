@@ -401,11 +401,6 @@ o caption e a imagem responsivas usámos as percentagems nestas duas classes. As
 
 }
 
-.nav-item {
-  padding: 8px;
-}
-
-
 .container {
   display: flex;
   flex-direction: column;

@@ -1,10 +1,10 @@
 document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault(); 
+    event.preventDefault(); // Impede o envio padrão do formulário
     validateForm();
 });
 
 function validateForm() {
-    var erro = false; 
+    var erro = false; // Variável para rastrear erros
 
     // Validação do nome
     var nome = document.getElementById('nome');
@@ -30,13 +30,14 @@ function validateForm() {
     // Validação dos termos
     var termos = document.getElementById('termos');
     if (!termos.checked) {
-        showError('termos', 'Tem de aceitar os termos e condições');
+        showError('termos', 'Você precisa aceitar os termos e condições');
         erro = true;
     } 
+    // Se não houver erros, exibe mensagem de sucesso e limpa o formulário
     if (!erro) {
         alert('Formulário enviado com sucesso!');
         document.getElementById('contact-form').reset(); // Limpa o formulário
-        clearAllErrors(); // Remove as mensagens de erro e classes de validação
+        limparErros(); // Remove as mensagens de erro e classes de validação
     }
 }
 
@@ -62,8 +63,8 @@ function showError(campoId, mensagem) {
 
 // Função para limpar todas as mensagens de erro
 function limparErros() {
-    const erroMenssagem = document.querySelectorAll('.erro-menssagem');
-    erroMenssagem.forEach(error => error.remove());
+    const erroMensagem = document.querySelectorAll('.error-mensagem');
+    erroMensagem.forEach(error => error.remove());
 
     const invalidFields = document.querySelectorAll('.is-invalid');
     invalidFields.forEach(field => field.classList.remove('is-invalid'));
