@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles_contacto.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-expand-sm">
+        <a href="" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+          <img src="resources/img/logotipo_ipl.png" alt="Logotipo IPL" id="logotipo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="paises.html">Países</a>
+            </li>
+            <li class="nav-item">
+              <a id="loja" class="nav-link" href="#">Loja</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="favoritos.html">Favoritos</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-primary" href="contacto.html">Contactos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="body-form">
+      <div class="about">
+      <h1>Contactos</h1>
+      <p>Em caso de dúvidas ou reclamações entre em contacto com um membro da nossa equipa
+      </p>
+      </div>
+    <div class="container-form">
+        <div class="box-info">
+            <h1>Envie uma mensagem!</h1>
+            <div class="data">
+                <p> +351 999 000 111</p>
+                <p>onossoemail@gmail.com</p>
+                <p> Leiria, Portugal</p>
+            </div>
+            <div class="links">
+                <a href="#"><img src="resources/img/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="resources/img/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <form id="contact-form" method="post" novalidate>
+            <div class="input-box">
+                <input type="nome" id="nome" placeholder="Nome Completo" required>
+            </div>
+            <div class="input-box">
+                <input type="email" id="email" required placeholder="E-mail">
+            </div>
+            <div class="input-box">
+                <textarea  id="mensagem" placeholder="Mensagem..."required></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="termos" required>
+              <label class="form-check-label" for="termos">Termos e condições</label>
+          </div>
+            <button type="submit">Submeter</button>
+        </form>
+    </div>
+  </div>
+    <footer class="footer-container">
+      <div class="container">
+          <div class="logotipo">
+          <img src="resources/img/logotipo_ipl.png">
+          </div>
+          <div class="footer">
+             <ul class="nav justify-content-center pb-3 mb-3">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Países</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Loja</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sobre</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contactos</a></li>
+            </ul>   
+          </div>
+        <div class="redes">
+          <a href="#"><img src="resources/img/linkedin.png" alt="LinkedIn"></a>
+          <a href="#"><img src="resources/img/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="resources/img/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="resources/img/twitter.png" alt="Twitter"></a>
+        </div>
+        <hr>
+          <p class="text-center text-body-secondary"> &copy; 2024 Direitos de Autor, Todos os direitos reservados</p>
+      </div>
+    </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script_contacto.js"></script>
+</body>
+</html>
